@@ -1,0 +1,31 @@
+@import "_bootstrap.scss";
+@import "slick.scss";
+@import "slick-theme.scss";
+
+body .pleasedontdothis {
+  font-family: 'Comic Sans MS', 'Comic Sans'!important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Georgia', sans-serif;
+}
+
+.col-centered {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-carousel {
+  height: 350px;
+  max-height: 90vh;
+}
+
+.example {
+  img {
+    border-radius: 50%;
+  }
+  h3 {
+    font-family: "Comic Sans MS"
+  }
+}

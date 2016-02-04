@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CS 171 HW 1, Patrick Pan</title>
+  <link href="/css/style.css" rel="stylesheet" type="text/css"></link>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>CS 171: HW 1</h1>
+      <h2>Patrick Pan</h2>
+    </div>
+    <h3>Global Hunger Index</h3>
+    <table class="table table-striped table-bordered table-hover sortable">
+      <tr>
+        <th>Country</th>
+        <th>1990</th>
+        <th>2000</th>
+        <th>2014</th>
+      </tr>
+      <tr>
+        <td>Central African Republic</td>
+        <td>51.9</td>
+        <td>51.4</td>
+        <td>46.9</td>
+      </tr>
+      <tr>
+        <td>Chad</td>
+        <td>65</td>
+        <td>52</td>
+        <td>46.4</td>
+      </tr>
+      <tr>
+        <td>Haiti</td>
+        <td>52.1</td>
+        <td>42.8</td>
+        <td>37.3</td>
+      </tr>
+      <tr>
+        <td>Madagascar</td>
+        <td>44.8</td>
+        <td>44.1</td>
+        <td>36.3</td>
+      </tr>
+      <tr>
+        <td>Sierra Leone</td>
+        <td>58.8</td>
+        <td>53.5</td>
+        <td>38.9</td>
+      </tr>
+      <tr>
+        <td>East Timor</td>
+        <td>-</td>
+        <td>-</td>
+        <td>40.7</td>
+      </tr>
+      <tr>
+        <td>Zambia</td>
+        <td>47</td>
+        <td>50.9</td>
+        <td>41.1</td>
+      </tr>
+      <caption>The Global Hunger Index (GHI) is designed to comprehensively measure and track hunger globally and by country and region. Calculated each year by the International Food Policy Research Institute (IFPRI), the GHI highlights successes and failures in hunger reduction and provides insights into the drivers of hunger. (IFPRI, 2015)</caption>
+    </table>
+  </div>
+  <div class="container well text-center">
+    <h3>Four Data Visualizations</h3>
+    <div class="carousel col-xs-12 col-md-6 col-centered">
+      <img class="img-carousel" src="/img/candy.jpg" />
+      <img class="img-carousel" src="/img/poverty.png" />
+      <img class="img-carousel" src="/img/jobs.jpg" />
+      <img class="img-carousel" src="/img/syrup.jpg" />
+    </div>
+  </div>
+  <div class="container well">
+    <div class="col-xs-12 col-md-6">
+      <img class="img-responsive" src="/img/candy.jpg" />
+      <a href="https://www.reddit.com/r/dataisbeautiful/comments/3sx4fi/color_distribution_of_one_party_sized_bag_of/">Source</a>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <h3>Candies</h3>
+      This first visualization uses no text at all and focuses entirely upon its intuitive visual aspect. We are all familiar with the different colors of candies in an M&M or Skittles pack, and this visualization simply describes the numbers of each color
+      in one (or some number of) pack(s). This is a <b>good</b> visualization because it is so intuitive and is numerically proper.
+      <div>
+        <h4>Pros:</h4>
+        <ul>
+          <li>Intuitive</li>
+          <li>Uses color</li>
+          <li>High ink-to-data ratio</li>
+          <li>All scales appropriate (starts at 0, equal width)</li>
+        </ul>
+        <h4>Cons:</h4>
+        <ul>
+          <li>Not sorted by value</li>
+          <li>As intuitive as this is, a title would be helpful for those truly unfamiliar</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container well">
+    <div class="col-xs-12 col-md-6">
+      <img class="img-responsive" src="/img/poverty.png" />
+      <a href="https://www.reddit.com/r/dataisbeautiful/comments/3fbqg5/1_billion_people_lived_in_extreme_poverty_two/">Source</a>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <h3>Poverty</h3>
+      This well-labeled graph illustrates two things: the logistic growth of humanity over time and the prevalence of poverty. It is interesting and versatile, and extremely easy to read. This is a <b>good</b> visualization because it is intuitive and
+      flexible.
+      <div>
+        <h4>Pros:</h4>
+        <ul>
+          <li>Uses color</li>
+          <li>High ink-to-data ratio</li>
+          <li>Y-axis appropriate (starts at 0)</li>
+          <li>Grid makes it easy to read</li>
+          <li>Good at conveying two aspects of humanity at once</li>
+        </ul>
+        <h4>Cons:</h4>
+        <ul>
+          <li>X-axis not at an evenly labeled scale. It seems that it is actually to scale in terms of value, but it's much harder to verify that this is true.</li>
+          <li>As a standalone image, the text is overwhelming. Presenting the fine print as a caption would be more effective.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container well">
+    <div class="col-xs-12 col-md-6">
+      <img class="img-responsive" src="/img/jobs.jpg" />
+      <a href="https://www.reddit.com/r/dataisugly/comments/2ym6rl/java_is_more_language_than_c/">Source</a>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <h3>CS Job Demand</h3>
+      This visualization attempts to show the relative demand of programming skills in CS. However, it's unclear how specifically this is answered. Moreover, the graph has only one valid axis. This is a <b>bad</b> visualization because while it conveys
+      a general idea, its numerical data are inaccurately displayed and it uses the wrong form of visualization; a bar graph or pie chart may have been more appropriate.
+      <div>
+        <h4>Pros:</h4>
+        <ul>
+          <li>Visually attractive
+            <li>
+              <li>Interesting theme</li>
+              <li>Uses recognizable logos</li>
+              <li>Easily conveys general gist (Java is more demanded than C++)</li>
+              <li>Mentions sample size</li>
+        </ul>
+        <h4>Cons:</h4>
+        <ul>
+          <li>The Y-axis means <i>nothing</i>. "Language" is not a numerical value.</li>
+          <li>The X-axis does not start at 0, nor is it to scale. Python and Rails differ only by 0.1%.</li>
+          <li>Putting some languages above the line and others under is confusing.</li>
+          <li>Caption is not clear: What are these Stack Overflow searches, specifically?</li>
+          <!-- <li>Does not show that Node.JS is the True Dev Language</li> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="container well">
+    <div class="col-xs-12 col-md-6">
+      <img class="img-responsive" src="/img/syrup.jpg" />
+      <a href="https://www.reddit.com/r/dataisugly/comments/2zjfyt/syrup_related_crimes/">Source</a>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <h3>Syrup-related crimes</h3>
+      This "bar graph" shows the "growth" of syrup-related crimes from 2002-2012. However, it incorrectly uses categories of different widths. Most importantly, however, its data is not numerically interesting as there is no statistically significant trend. Rather, an interesting visualization may have said "4102 days since last syrup-related crime". This is thus a <b>bad</b> visualization.
+      <div>
+        <h4>Pros:</h4>
+        <ul>
+          <li>Minimalistic</li>
+        </ul>
+        <h4>Cons:</h4>
+        <ul>
+          <li>Categories of different widths.</li>
+          <li>Scale shows marks between 0 and 1 but there cannot be a fraction of a syrup-related crime</li>
+          <li>Visualization "means" nothing as there is no numerical trend.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <script type="text/javascript" src="http://www.cs171.org/2016/assets/scripts/hw1/sorttable.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/slick.min.js"></script>
+  <script>
+    $(function() {
+      $(".carousel").slick({
+        autoplay: true,
+        autoplaySpeed: 1500,
+        variableWidth: true,
+        centerMode: true
+      });
+    })
+  </script>
+
+</body>
+
+</html>
