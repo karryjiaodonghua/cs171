@@ -30,7 +30,7 @@ function clearStats() {
 $("#area").change(createVisualization);
 $("#type").change(createVisualization);
 
-function filterData(data, options) {
+function filterDelivery(data, options) {
   Object.keys(options).forEach((key) => {
     console.log(key)
     console.log(options[key])
@@ -39,30 +39,24 @@ function filterData(data, options) {
   return data;
 }
 
+function filterFeedback(deliveries, feedback) {
+  var deliveryIDs = deliveries.map((data) => data.delivery_id);
+  return feedback.filter((f) => {
+    while(deliveryIDs[0] < f.delivery_id) deliveryIDs.shift();
+    return deliveryIDs[0] == f.delivery_id;
+  })
+}
+
 function createVisualization() {
 
-
-
-
-  /* ************************************************************
-   *
-   * ADD YOUR CODE HERE
-   * (accordingly to the instructions in the HW2 assignment)
-   *
-   * 1) Filter data
-   * 2) Display key figures
-   * 3) Display bar chart
-   * 4) React to user input and start with (1)
-   *
-   * ************************************************************/
   var area = $("#area").val();
   var type = $("#type").val();
   var filter = {};
   if (area != "all") filter.area = area;
   if (type != "all") filter.order_type = type;
 
-  filteredDeliveryData = filterData(sourceDeliveryData, filter);
-  filteredFeedbackData = filterData(sourceFeedbackData, filter);
+  filteredDeliveryData = filterDelivery(sourceDeliveryData, filter);
+  filteredFeedbackData = filterFeedback(filteredDeliveryData, sourceFeedbackData);
 
   var numDeliveries = filteredDeliveryData.length;
   var totalDelivered = filteredDeliveryData.reduce((total, next) => {
