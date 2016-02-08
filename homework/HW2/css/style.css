@@ -2,7 +2,14 @@
 
 /* ************ ADD YOUR CUSTOM STYLES ************ */
 
+svg {
+  display: block;
+  margin:auto;
+}
 
+#chart-area h3 {
+  text-align: center;
+}
 
 /****************/
 /*   BAR-CHART  */
