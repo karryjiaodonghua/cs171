@@ -1,0 +1,33 @@
+.bd-name {
+  text-anchor: end;
+  alignment-baseline: middle;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.bd-bar {
+  fill: brown;
+  cursor: pointer;
+}
+
+.bd-height {
+  text-anchor: end;
+  alignment-baseline: middle;
+  fill: white;
+  font-size: 13px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+#leftcol.rightExists{
+  border-right: 1px solid #666;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Roboto Slab';
+  font-weight: 700;
+}
+
+div, span, text, table {
+  font-family: Lato
+}
