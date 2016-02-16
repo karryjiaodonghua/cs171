@@ -1,0 +1,10 @@
+CS 171: HW 3
+Patrick Pan
+
+This visualization is aimed at readers of the Washington Post, who are generally an educated and liberal but otherwise average sample of the American population. It aims to show the breakdown of causes of death into three categories (infectious diseases/birth problems, injuries, and noncommunicable diseases), the breakdown of those causes within these categories, and the rate at which the proportions of these causes change. This is done by showing the proportions of causes of death and the year-to-year percentage change for each of these causes. The major categories of death are represented with color, the proportion of each cause of death (major categories and specific causes) is represented using size and shape,     and the change over time is represented with saturation.
+
+Contrast of colors in this image is used to distinguish between major categories of causes of death. This presents a problem: first, redder colors (specifically the magenta used in this diagram), due to biology, seem more saturated and thus more important; second, more saturated colors in rare causes of death seem to diminish the importance of less saturated colors in very common causes of death, such as stroke.
+
+The most egregious violation of Tufte's principles is the Lie factor. Blocks on the side of the square appear to be more than double as big in pure area, even though they are the same volume. But the representations of actual volume seem to be correct. It also seems that yellow shades are generally more saturated than other colors. The data-to-ink ratio is quite satisfactory.  
+
+The greatest problem with the diagram is the varying directions of text. Text is more legible at a horizontal angle and it doesn't help that the text runs in two different directions in this diagram. Changing the text to at least all be in the same direction and optimally horizontal would greatly improve legibility. 

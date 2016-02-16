@@ -1,0 +1,6 @@
+CS 171: HW 3
+Patrick Pan
+
+Sketch #3 Analysis
+
+Data is represented entirely by size and shape in this visualization. The change in size over time of the "bubbles" represent the amount of deaths due to each cause of death. Contrast in size between different causes of death illustrate the relative importance of each cause of death. The data-to-ink ratio is not extremely high, as pure numbers would more effectively encapsulate the values themselves but shape aids the viewer in truly understanding the data.
