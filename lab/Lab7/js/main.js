@@ -51,6 +51,7 @@ function createVis() {
 	// TO-DO: Instantiate visualization objects here
 	// areachart = new ...
 
+  areaChart = new StackedAreaChart("stacked-area-chart", allData.layers)
 }
 
 
