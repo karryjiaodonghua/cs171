@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CS171: HW5</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<div id="main" class="container">
+
+    <div class="jumbotron">
+      <h1>CS171: HW5</h1>
+      <h3>Patrick Pan</h3>
+    </div>
+
+    <h1>FIFA Statistics</h1>
+    <!-- Select box to choose the ranking type -->
+		<form class="form">
+			<div class="form-group">
+		    <label for="rankingType">Y-Axis</label>
+		    <select class="form-control" id="data-type" onchange="draw()">
+				  <option value="goals">Goals</option>
+				  <option value="average_goals">Average Goals</option>
+          <option value="matches">Matches</option>
+          <option value="teams">Teams</option>
+          <option value="average_attendance">Average Attendance</option>
+				</select>
+        <label for="dateRange">Date Range:</label>
+        <input type="number" class="form-control col-xs-12 col-sm-6" id="date_min" placeholder="Start">
+        <input type="number" class="form-control col-xs-12 col-sm-6" id="date_max" placeholder="End">
+      </div>
+      <button type="button" class="btn" id="update">Update</button>
+    </form>
+
+
+		<!-- Parent container for the visualization -->
+		<div class="row">
+      <div id="chart-area" class="col-xs-12 col-md-8"></div>
+      <div id="game-data" class="col-xs-12 col-md-4"></div>
+		</div>
+
+	</div>
+
+	<!-- Load JS libraries: jQuery, bootstrap, D3, D3 tooltip -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/d3.min.js"></script>
+	<script src="js/d3.tip.js"></script>
+
+	<!-- Your implementation -->
+	<script src="js/main.js"></script>
+</body>
+</html>

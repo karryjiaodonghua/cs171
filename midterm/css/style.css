@@ -1,11 +1,53 @@
 
 /* YOUR CSS STYLES */
-.q0-9 { fill:rgb(247,251,255); }
-.q1-9 { fill:rgb(222,235,247); }
-.q2-9 { fill:rgb(198,219,239); }
-.q3-9 { fill:rgb(158,202,225); }
-.q4-9 { fill:rgb(107,174,214); }
-.q5-9 { fill:rgb(66,146,198); }
-.q6-9 { fill:rgb(33,113,181); }
-.q7-9 { fill:rgb(8,81,156); }
-.q8-9 { fill:rgb(8,48,107); }
+.color-0 { fill:rgb(247,251,255); }
+.color-1 { fill:rgb(222,235,247); }
+.color-2 { fill:rgb(198,219,239); }
+.color-3 { fill:rgb(158,202,225); }
+.color-4 { fill:rgb(107,174,214); }
+.color-5 { fill:rgb(66,146,198); }
+.color-6 { fill:rgb(33,113,181); }
+.color-7 { fill:rgb(8,81,156); }
+.color-8 { fill:rgb(8,48,107); }
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.source-label text {
+  text-anchor: end;
+  font: 10px sans-serif;
+}

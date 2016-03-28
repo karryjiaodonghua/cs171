@@ -17,7 +17,7 @@
       <h1>Malaria in the 21st Century</h1>
       <h3>Patrick Pan | CS 171</h3>
     </div>
-    <section>
+    <div class="container">
       <div class="col-xs-12 col-sm-4 col-md-6">
         <div class="page-header">
           <h3>What is Malaria?</h3>
@@ -35,29 +35,42 @@
       </div>
       <div class="col-xs-12 col-sm-8 col-md-6">
         <div class="well" id="svg-container-1">
+          <h4>Malaria in Africa: Interactive Diagram</h4>
+          <select id="current-feature">
+            <option value="UN_population">Population</option>
+            <option value="At_risk">Percent at Risk of Malaria</option>
+            <option value="At_high_risk">Percent at High Risk of Malaria</option>
+            <option value="Suspected_malaria_cases">Number of Suspected Malaria Cases</option>
+            <option value="Malaria_cases">Number of Known Malaria Cases</option>
+          </select>
         </div>
       </div>
-    </section>
+    </div>
+    <div class="container">
+      <div class="col-xs-12 col-sm-4 col-md-6">
+        <div class="page-header">
+          <h3>The Fight Against Malaria</h3>
+        </div>
+        <p>
+          To address remaining challenges in global malaria control and elimination, WHO has developed the Global Technical Strategy for Malaria 2016-2030. Adopted by the World Health Assembly in May 2015, the strategy provides a technical framework for all endemic countries as they work towards malaria control and elimination. This Global Technical Strategy sets ambitious but achievable goals for 2030, including: reducing malaria case incidence by at least 90%; reducing malaria mortality rates by at least 90%; eliminating malaria in at least 35 countries; preventing a resurgence of malaria in all countries that are malaria-free. To achieve these targets, annual funding for malaria will need to triple over the next 15-year period, from US$ 2.7 billion (current level of spending) to US$ 8.7 billion by 2030.
+        </p>
+      </div>
+      <div class="col-xs-12 col-sm-8 col-md-6">
+        <div class="well" id="svg-container-2">
+          <h4>Anti-Malaria Donation Sources</h4>
+        </div>
+      </div>
+    </div>
 
 
   </div>
-
-
-	<!--
-
-		MALARIA
-			- Information
-			- Choropleth
-			- Implementation of own sketch or tree visualization
-
-	-->
-
 	<!-- Load JS libraries -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/queue.min.js"></script>
 	<script src="js/topojson.js"></script>
 	<script src="js/d3.min.js"></script>
+	<script src="js/d3.tip.js"></script>
 
 	<!-- Choropleth and second visualization -->
 	<script src="js/vis-choropleth.js"></script>

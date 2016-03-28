@@ -1,0 +1,38 @@
+@import url(bootstrap.min.css);
+.area {
+  fill: brown;
+  stroke-width: 0;
+}
+.axis *:not(text) {
+  fill: none;
+  stroke: #000;
+}
+.axis text {
+  fill: black;
+  font-size: 10px;
+  stroke: none;
+}
+svg {
+  display: block;
+  margin: auto;
+}
+text.rotate {
+  transform: rotate(-90deg);
+}
+.bar {
+  fill: brown;
+}
+.capturerect {
+  fill: none;
+  pointer-events: all;
+}
+.hiddeng {
+  visibility: hidden !important;
+}
+.xline, .yline {
+  stroke: blue;
+  stroke-dasharray: 3, 3;
+  opacity: 0.3;
+}
+
+/*# sourceMappingURL=style.css.map */
